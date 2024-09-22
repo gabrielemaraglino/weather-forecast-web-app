@@ -22,11 +22,17 @@ The application is **deployed** and available at: [Weather Forecast App](https:/
     ```bash
     cd weather-forecast-app
     ```
-5. Install the required dependencies using pip:
+5. Set up your API key:
+    - You can either create a `config.py` file and add your `api_key` there:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+      ```python
+      api_key = "YOUR_API_KEY"
+      ```
+    - Or, export the API key as an environment variable:
+
+      ```bash
+      export API_KEY=YOUR_API_KEY
+      ```
 
 7. Get an API key from [OpenWeatherMap](https://openweathermap.org/) by creating an account.
 
@@ -50,12 +56,6 @@ The application is **deployed** and available at: [Weather Forecast App](https:/
     - **Temperature**: Displays a line chart of temperature trends over the selected days.
     - **Sky Conditions**: Shows images representing sky conditions (e.g., clear, cloudy, rainy) for each time interval.
 
-## Example
 
-### Temperature Forecast for Tokyo (3 days):
-![Temperature example](images/temperature_example.png)
-
-### Sky Conditions for London (2 days):
-![Sky Conditions example](images/sky_example.png)
 
 
