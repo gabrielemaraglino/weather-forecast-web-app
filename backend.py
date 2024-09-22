@@ -1,5 +1,9 @@
 import requests
-from config import API_KEY
+try:
+    from config import api_key
+except ImportError:
+    import os
+    api_key = os.getenv("API_KEY")  # Use environment variable in production
 
 
 def get_data(place, forecast_days=None):
